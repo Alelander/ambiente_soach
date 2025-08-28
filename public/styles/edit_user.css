@@ -1,0 +1,121 @@
+/* ===== WRAPPER DEL LISTADO ===== */
+.usuarios-wrapper {
+  max-width: 850px;       /* ancho máximo para que no se extienda mucho */
+  margin: 40px auto;      /* centrar horizontalmente y separar vertical */
+  background-color: #fff; /* fondo blanco sólido */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px 40px;    /* espacio interno para que no pegue */
+  box-sizing: border-box;
+  overflow-x: auto;      /* para tablas anchas */
+}
+
+
+/* Encapsular todo en un contenedor para no afectar al resto */
+.edit-user-page form {
+    max-width: 800px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.478);
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.edit-user-page h1 {
+    text-align: center;
+    color: #205a81;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.edit-user-page table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.edit-user-page td {
+    padding: 12px 10px;
+    vertical-align: middle;
+}
+
+.edit-user-page label {
+    font-weight: bold;
+    color: #205a81;
+    display: block;
+}
+
+.edit-user-page input[type="text"],
+.edit-user-page input[type="email"],
+.edit-user-page select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 2px solid #3977a3;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.edit-user-page input[type="text"]:focus,
+.edit-user-page input[type="email"]:focus,
+.edit-user-page select:focus {
+    border-color: #205a81;
+    outline: none;
+}
+
+.edit-user-page input[readonly] {
+    background-color: #f0f0f0;
+    color: #777;
+    cursor: not-allowed;
+}
+
+.edit-user-page button[type="submit"] {
+    background-color: #205a81;
+    color: white;
+    padding: 12px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.edit-user-page button[type="submit"]:hover {
+    background-color: #10447c;
+}
+
+/* Enlace para volver */
+.edit-user-page .volver-link {
+    display: block;
+    max-width: 800px;
+    margin: 20px auto 0;
+    text-align: center;
+    text-decoration: none;
+    color: #205a81;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.edit-user-page .volver-link:hover {
+    color: #10447c;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .edit-user-page form {
+        padding: 20px;
+    }
+
+    .edit-user-page td {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    .edit-user-page td:first-child {
+        margin-top: 12px;
+    }
+}
+
